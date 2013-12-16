@@ -39,7 +39,7 @@ class internet2_repo (
 
   file { '/etc/pki/rpm-gpg/RPM-GPG-KEY-Internet2':
     ensure  => present,
-    source  => 'puppet:///modules/osg/RPM-GPG-KEY-Internet2',
+    source  => 'puppet:///modules/internet2_repo/RPM-GPG-KEY-Internet2',
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
